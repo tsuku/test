@@ -1,0 +1,28 @@
+<html>
+<head>
+<script
+src="http://www.google.cn/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(35.685536,139.7548424,13),
+  zoom:6,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+
+<div id="googleMap" style="width:800px;height:1200px;"></div>
+
+
+</body>
+</html>
